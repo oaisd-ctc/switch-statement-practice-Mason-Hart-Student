@@ -1,43 +1,49 @@
 ﻿using System;
 
-public class program
+public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Enter a number between 1-10");
+        Console.WriteLine("Enter a number between 0-10");
         int num = int.Parse(Console.ReadLine());
-        if (num == 1) {
-            Console.WriteLine("Your number is One");
-        }
-        if (num == 2) {
-            Console.WriteLine("Your number is Two");
-        }
-        if (num == 3) {
-            Console.WriteLine("Your number is Three");
-        }
-        if (num == 4) {
-            Console.WriteLine("Your number is Four");
-        }
-        if (num == 5) {
-            Console.WriteLine("Your number is Five");
-        }
-        if (num == 6) {
-            Console.WriteLine("Your number is Six");
-        }
-        if (num == 7) {
-            Console.WriteLine("Your number is Seven");
-        }
-        if (num == 8) {
-            Console.WriteLine("Your number is Eight");
-        }
-        if (num == 9) {
-            Console.WriteLine("Your number is Nine");
-        }
-        if (num == 10) {
-            Console.WriteLine("Your number is Ten");
-        }
-        if (num > 10) {
-            Console.WriteLine("Your number is out of range");
+        switch (num)
+        {
+            case 0:
+                Console.WriteLine("Your number is zero");
+                break;
+            case 1:
+                Console.WriteLine("Your number is one");
+                break;
+            case 2:
+                Console.WriteLine("Your number is two");
+                break;
+            case 3:
+                Console.WriteLine("Your number is three");
+                break;
+            case 4:
+                Console.WriteLine("Your number is four");
+                break;
+            case 5:
+                Console.WriteLine("Your number is five");
+                break;
+            case 6:
+                Console.WriteLine("Your number is six");
+                break;
+            case 7:
+                Console.WriteLine("Your number is seven");
+                break;
+            case 8:
+                Console.WriteLine("Your number is eight");
+                break;
+            case 9:
+                Console.WriteLine("Your number is nine");
+                break;
+            case 10:
+                Console.WriteLine("Your number is ten");
+                break;
+            default:
+                Console.WriteLine("Your number is out of range");
+                break;
         }
     }
 }
